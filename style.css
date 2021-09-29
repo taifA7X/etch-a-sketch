@@ -1,13 +1,7 @@
-#parentDiv {
+#grid {
     display: grid;
-    grid-template-columns: repeat(16, 50px);
-    grid-template-rows: repeat(16);
-
+    height: 900px;
+    width: 900px;
+    border: 2px solid black;
 }
-
-#parentDiv div {
-    background-color: brown;
-    height: 50px;
-    border: 1px solid black;
-}
-  
+ 
