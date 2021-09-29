@@ -1,5 +1,6 @@
 let grid = document.querySelector('#grid')
 let erase = document.querySelector('#erase')
+let size = prompt("Enter length of sides")
 
 function createGrid(size) {
     for (let i = 0; i < (size *size); i++) {
@@ -17,7 +18,10 @@ function createGrid(size) {
     grid.style.gridTemplateRows = `repeat(${size}, 1fr)`
 }
 
-createGrid(100)
+if (size > 101) {
+    alert('Too much');
+}
+else {createGrid(size)}
 
 
 
